@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Battlemage E-Sports</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Veni', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #002fff;
+            line-height: 1.6;
+           
+        }
+   
+        @font-face {
+            font-family: Singwood;
+            src: url(Signwood-vnvD7.ttf);
+        }
+        @font-face {
+            font-family: Veni;
+            src: url(VeniteAdoremusStraight-Yzo6v.ttf);
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(PoppinsMediumItalic-REKE.otf);
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #909190;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 40px 20px;
+            text-align: center;
+            color: #000000;
+            box-shadow: 0 4px 6px #ffb000;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff0000;
+            transform: translateY(-3px);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .faq-section {
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #d00202;
+            margin-bottom: 40px;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.3rem;
+            color: #ffb000;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            font-size: 1.1rem;
+            color: #d50000;
+            line-height: 1.8;
+        }
+
+        /* Community Questions Section */
+        .community-questions {
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #d30808;
+            margin-bottom: 40px;
+        }
+
+        .community-questions h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .community-questions textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #d60000;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            resize: vertical;
+            height: 100px;
+        }
+
+        .community-questions button {
+            padding: 10px 20px;
+            background-color: #d00000;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .community-questions button:hover {
+            background-color: #ffffff;
+        }
+
+        .community-answers {
+            margin-top: 20px;
+        }
+
+        .community-answers .answer {
+            background-color: #000000;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .community-answers .answer p {
+            font-size: 1rem;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+            margin-top: 60px;
+            box-shadow: 0 -4px 6px #ffb000;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Battlemage E-Sports</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="faq-container">
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is GEMS International?</h3>
+                <p>GEMS International is an organization dedicated to empowering young people aged 12-20 through education, skill development, and extracurricular activities, including e-sports.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What does GEMS International focus on?</h3>
+                <p>It focuses on academic growth, leadership skills, talent development, and competitive opportunities for young individuals.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is GEMS International only about e-sports?</h3>
+                <p>No, GEMS International supports various activities, including academic programs, skill-building workshops, leadership training, and e-sports competitions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the mission of GEMS International?</h3>
+                <p>To empower young individuals by providing them with opportunities to develop skills, explore their potential, and compete at high levels in various fields.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does GEMS International support young people?</h3>
+                <p>By providing training, mentorship, competitions, and community support to help youth excel in their chosen fields.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Who can join GEMS International?</h3>
+                <p>Anyone between the ages of 12-20 who is passionate about learning, growing, and competing in different activities.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does GEMS International offer scholarships?</h3>
+                <p>Yes, GEMS provides scholarships and sponsorships for talented individuals in e-sports and other fields.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is GEMS International a nonprofit organization?</h3>
+                <p>Yes, it operates as a nonprofit, investing in youth development and providing opportunities at no cost to eligible participants.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I join GEMS International?</h3>
+                <p>You can apply through the official website, participate in community events, or contact their team via email.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where can I find more information about GEMS International?</h3>
+                <p>You can check out their website, Discord community, and official announcements.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is Battlemage E-Sports?</h3>
+                <p>Battlemage E-Sports is a competitive gaming division of GEMS International, focused on training and supporting young e-sports players.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What games does Battlemage E-Sports support?</h3>
+                <p>The team competes in popular e-sports titles like Valorant, Fortnite, League of Legends, CS:2, Dota 2, Call of Duty, PUBG Mobile, Apex Legends, Overwatch 2, Rainbow Six Siege, Minecraft, and Free Fire.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is Battlemage E-Sports open to casual players?</h3>
+                <p>Yes, both casual and competitive players can join and participate in tournaments, practice sessions, and events.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage E-Sports offer coaching?</h3>
+                <p>Yes, experienced coaches train players in game mechanics, strategy, teamwork, and professional-level gameplay.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I join Battlemage E-Sports if I am new to gaming?</h3>
+                <p>Yes, beginners are welcome and can improve through training and mentorship.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does Battlemage E-Sports select its players?</h3>
+                <p>Players are selected through tryouts, performance evaluations, and applications submitted via Discord or email.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage E-Sports participate in official tournaments?</h3>
+                <p>Yes, the team competes in regional, national, and international e-sports tournaments.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What makes Battlemage E-Sports different from other teams?</h3>
+                <p>It focuses on youth empowerment, skill development, and professional coaching, making it an ideal platform for aspiring e-sports athletes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there an age limit for joining Battlemage E-Sports?</h3>
+                <p>Yes, players must be between 12-20 years old to participate.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where can I watch Battlemage E-Sports matches?</h3>
+                <p>Matches are streamed on platforms like Twitch, YouTube, and Discord.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does Battlemage E-Sports train its players?</h3>
+                <p>Through structured coaching, strategy sessions, gameplay analysis, and practice matches.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need professional gaming gear to join?</h3>
+                <p>No, but having a good PC, console, or mobile device can enhance performance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What skills do I need to be a pro e-sports player?</h3>
+                <p>Reflexes, teamwork, strategy, communication, and adaptability.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage offer in-game training?</h3>
+                <p>Yes, players receive coaching and one-on-one training.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage E-Sports host tournaments?</h3>
+                <p>Yes, regular tournaments for players of all skill levels.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I participate in Battlemage events?</h3>
+                <p>Join through Discord or register online.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are there rewards for winning tournaments?</h3>
+                <p>Yes, including cash prizes, sponsorships, and scholarships.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are the different teams in Battlemage E-Sports?</h3>
+                <p>Teams are divided based on games and skill levels.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I switch teams after joining?</h3>
+                <p>Yes, if you qualify for a different skill level or game.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is teamwork important in Battlemage E-Sports?</h3>
+                <p>Yes, teamwork and coordination are essential for success.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I make a career in e-sports?</h3>
+                <p>Yes, e-sports offers professional career paths like gaming, streaming, coaching, and management.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does Battlemage help players go pro?</h3>
+                <p>By providing exposure, coaching, and tournament opportunities.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage support balancing studies and gaming?</h3>
+                <p>Yes, GEMS International ensures that gaming and education go hand in hand.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can gaming improve skills useful for education?</h3>
+                <p>Yes, gaming enhances critical thinking, reaction time, and teamwork.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need an expensive gaming setup?</h3>
+                <p>No, but a good setup improves gameplay.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What gaming accessories does Battlemage recommend?</h3>
+                <p>Headsets, mechanical keyboards, gaming mice, and high-refresh-rate monitors.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage host online tournaments?</h3>
+                <p>Yes, both online and offline.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I register for a Battlemage tournament?</h3>
+                <p>Via Discord or the official website.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I play in multiple tournaments at once?</h3>
+                <p>Yes, if schedules do not clash.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I interact with the Battlemage community?</h3>
+                <p>Through Discord, events, and social media.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does Battlemage organize meetups?</h3>
+                <p>Yes, including virtual and physical events.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I volunteer for Battlemage E-Sports?</h3>
+                <p>Yes, as a coach, event organizer, or moderator.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are there female teams in Battlemage?</h3>
+                <p>Yes, Battlemage supports diversity in e-sports.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What’s the future of Battlemage E-Sports?</h3>
+                <p>Expansion into more games, larger tournaments, and professional leagues.</p>
+            </div>
+        </div>
+        <div class="link-item">
+        <h3>The e-mail of gems.</h3>
+         <p>gemsofficial2024@gmail.com</p>
+        </div>
+        <div class="link-item">
+        <h3>The join link of battlemage E-sport's discord community server.</h3>
+        <p>https://discord.gg/nUMNZjtJ7v</p>
+        </div>
+        </div>
+        <!-- Community Questions Section -->
+        <div class="community-questions">
+            <h2>Ask a Question</h2>
+            <textarea placeholder="Type your question here..."></textarea>
+            <button>Submit</button>
+            <div class="community-answers">
+                <div class="answer">
+                    <p><strong>Visitor 1:</strong> How do I join Battlemage E-Sports?</p>
+                    <p><strong>Visitor 2:</strong> You can apply through Discord or email!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Battlemage E-Sports. All rights reserved.</p>
+    </footer>
+</body>
+</html>

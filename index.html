@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battlemage E-Sports</title>
+    <link rel="stylesheet" href="styles.css">
+        <style>
+        /* General Styles */
+        body {
+            font-family: 'Veni', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        @font-face {
+            font-family: Singwood;
+            src: url(Signwood-vnvD7.ttf);
+        }
+        @font-face {
+            font-family: Veni;
+            src: url(VeniteAdoremusStraight-Yzo6v.ttf);
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(PoppinsMediumItalic-REKE.otf);
+        }
+
+         h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffb000;
+            box-shadow: 0 4px 6px rgb(255, 213, 0);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff0000;
+            transform: translateY(-3px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+        }
+
+        .hero h2 {
+                font-size: 2.5rem;
+            background: linear-gradient(135deg, #1d5ae8, rgb(158, 33, 46));
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffd000e1;
+            color: #000000;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Featured Section */
+        .featured {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #cf0000;
+        }
+
+        .featured-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .featured-card {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(255, 183, 0);
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgb(255, 34, 34);
+        }
+
+        .featured-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .featured-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #e8e237;
+        }
+
+        .featured-card p {
+            font-size: 1rem;
+            color: #fff700;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+            margin-top: 60px;
+            box-shadow: 0 -4px 6px rgb(252, 202, 4);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Battlemage E-Sports</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Welcome to Battlemage E-Sports</h2>
+            <a href="about.html" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <h2>What We Offer</h2>
+        <div class="featured-cards">
+            <div class="featured-card">
+                <img src="https://static.owayo-cdn.com/newhp/img/magazin/esportsevents/esports-turnier.jpg" alt="Tournaments">
+                <h3>Competitive Tournaments</h3>
+                <p>Join our exciting e-sports tournaments and showcase your skills.</p>
+            </div>
+            <div class="featured-card">
+                <img src="https://valoresports.com/wp-content/uploads/2022/12/iStock-1317507992-1024x681.jpg" alt="Coaching">
+                <h3>Professional Coaching</h3>
+                <p>Get expert coaching to improve your gameplay and strategy.</p>
+            </div>
+            <div class="featured-card">
+                <img src="https://thumbs.dreamstime.com/b/neighborhood-meeting-residents-taking-turns-sharing-safety-tips-strategies-to-keep-their-community-safe-vector-320218011.jpg" alt="Community">
+                <h3>Vibrant Community</h3>
+                <p>Connect with gamers worldwide and build lasting friendships.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Battlemage E-Sports. All rights reserved.</p>
+    </footer>
+</body>
+</html>

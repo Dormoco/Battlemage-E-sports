@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Battlemage E-Sports</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+        
+            font-family: 'veni', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fdfffe;
+            line-height: 1.6;
+        }
+        @font-face {
+            font-family: Singwood;
+            src: url(Signwood-vnvD7.ttf);
+        }
+        @font-face {
+            font-family: Veni;
+            src: url(VeniteAdoremusStraight-Yzo6v.ttf);
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(PoppinsMediumItalic-REKE.otf);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgb(255, 213, 0);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d01414;
+            transform: translateY(-3px);
+        }
+
+        /* Games Section */
+        .games-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .games-container h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #cf0000;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(255, 208, 0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgb(255, 2, 2);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #fbcd00;
+        }
+
+        .game-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1010;
+            color: #000000;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-card a:hover {
+            background-color: #ffffff;
+        }
+    
+        /* Footer */
+        footer { 
+            background: linear-gradient(135deg, #000000, #fbcd00);
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+            margin-top: 60px;
+            box-shadow: 0 -4px 6px rgb(252, 202, 4);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <h1>Battlemage E-Sports</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <!-- Games Section -->
+    <div class="games-container">
+        <h2>Featured E-Sports Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-1dade6e50659c8e05805cb150b349e56" alt="Valorant">
+                <h3>Valorant</h3>
+                <a href="https://playvalorant.com/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://media.discordapp.net/attachments/1327932180600717363/1328387379827970141/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg?ex=67c71e27&is=67c5cca7&hm=fcc7c598dc7c13be715710dbb8b8762569843e3391d414eb42ba93cce20785bf&=&format=webp&width=1387&height=780" alt="Fortnite">
+                <h3>Fortnite</h3>
+                <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2021/09/league-of-legends.jpeg?fit=1607%2C895&ssl=1" alt="League of Legends">
+                <h3>League of Legends</h3>
+                <a href="https://www.leagueoflegends.com/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://www.hotspawn.com/wp-content/uploads/2025/01/cs2.jpg" alt="CS:2">
+                <h3>CS:2</h3>
+                <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://business-portal-bucket.s3.amazonaws.com/media/images/41e172c318357d632f53b92d8cb38661_large_cover.original.jpg" alt="DOTA 2">
+                <h3>DOTA 2</h3>
+                <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://media.discordapp.net/attachments/1327932180600717363/1328355992743841792/maxresdefault.jpg?ex=67c700ec&is=67c5af6c&hm=ba9297a642d23744853f22625e44dadd04d0e5a819489485d124bbf3230c44e9&=&format=webp&width=1387&height=780" alt="Call Of Duty">
+                <h3>Call Of Duty</h3>
+                <a href="https://www.callofduty.com/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1oxMUijVizYrCLLUsh8PM-g4Vr6afwoTHdw&s" alt="PUBG Mobile">
+                <h3>PUBG</h3>
+                <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/apex-legends-listing-thumb-01-ps4-en-29oct20?$facebook$" alt="Apex Legends">
+                <h3>Apex Legends</h3>
+                <a href="https://www.ea.com/games/apex-legends" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/overwatch-2-HD-scaled.jpg" alt="Overwatch 2">
+                <h3>Overwatch 2</h3>
+                <a href="https://overwatch.blizzard.com/" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/359550/capsule_616x353.jpg?t=1738608668" alt="Rainbow Six Siege">
+                <h3>Rainbow Six Siege</h3>
+                <a href="https://www.ubisoft.com/game/rainbow-six/siege" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcl5S1oHuofSjSsGIZsQpLb-8DKc1K7tVOSg&s" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <a href="https://www.minecraft.net/en-us" target="_blank">Download</a>
+            </div>
+            <div class="game-card">
+                <img src="https://wallpapers.com/images/featured/free-fire-logo-neggg4nr4exfv0yh.jpg" alt="Free-Fire">
+                <h3>Free-Fire</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth&hl=en&pli=1" target="_blank">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Battlemage E-Sports. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
